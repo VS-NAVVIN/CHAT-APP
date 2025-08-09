@@ -65,7 +65,7 @@ const Sidebar = () => {
               {onlineUsers.includes(user._id) && (
                 <span
                   className="absolute bottom-0 right-0 size-3 bg-green-500 
-                  rounded-full ring-2 ring-zinc-900"
+                  rounded-full ring-2 ring-green-500"
                 />
               )}
             </div>

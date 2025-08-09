@@ -11,19 +11,19 @@ const io = new Server(server, {
   },
 });
 
-const userSocketMap = {}; // userId -> socket.id
+const userSocketMap = {};
 
 export function getReceiverSocketId(userId) {
   return userSocketMap[userId];
 }
 
 io.on("connection", (socket) => {
-  console.log("✅ A user connected:", socket.id);
+  console.log("A user connected:", socket.id);
 
   const userId = socket.handshake.query.userId;
   if (userId) {
     userSocketMap[userId] = socket.id;
-    socket.join(userId); // Join room with userId
+    socket.join(userId);
   }
 
   io.emit("getOnlineUsers", Object.keys(userSocketMap));
@@ -31,7 +31,7 @@ io.on("connection", (socket) => {
   socket.on("setup", (userId) => {
     userSocketMap[userId] = socket.id;
     socket.join(userId);
-    console.log("🧠 Setup received, joined room:", userId);
+    console.log("Setup received, joined room:", userId);
     io.emit("getOnlineUsers", Object.keys(userSocketMap));
   });
 
@@ -46,13 +46,13 @@ io.on("connection", (socket) => {
       createdAt: new Date().toISOString(),
     };
 
-    console.log("📤 Message from", senderId, "to", receiverId);
+    console.log("Message from", senderId, "to", receiverId);
 
     io.to(receiverId).emit("message received", messageData);
   });
 
   socket.on("disconnect", () => {
-    console.log("❌ A user disconnected:", socket.id);
+    console.log("A user disconnected:", socket.id);
     delete userSocketMap[userId];
     io.emit("getOnlineUsers", Object.keys(userSocketMap));
   });
