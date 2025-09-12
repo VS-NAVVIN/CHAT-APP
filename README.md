@@ -1,40 +1,32 @@
-💬 CHAT-APP
+# 💬 CHAT-APP
 
-A real-time MERN stack chat application built with Socket.io, Zustand, and a modern branded UI.
-Developed by V.S. NAVVIN as a full-stack portfolio project for placements and product thinking.
+A real-time **MERN stack chat application** built with **Socket.io, Zustand, and a modern branded UI**.  
+Developed by **V.S. NAVVIN** as a full-stack portfolio project for placements and product thinking. 
 
-🚀 Features
+## 🚀 Features
 
-🔐 Authentication – Secure login/signup with JWT + cookies
+- 🔐 **Authentication** – Secure login/signup with **JWT + cookies**  
+- 💬 **Real-time messaging** – Sender/receiver attribution with Socket.io  
+- 🟢 **Online status tracking** – Live presence updates  
+- 📦 **Global state management** – Powered by Zustand  
+- 🎨 **Modern UI/UX** – Responsive, branded design with smooth animations  
+- 🧼 **Clean Git hygiene** – Easy to set up and extend 
 
-💬 Real-time messaging – Sender/receiver attribution with Socket.io
+## 🛠️ Tech Stack
 
-🟢 Online status tracking – Live presence updates
+ **Frontend:** React, Zustand, Tailwind CSS  
+- **Backend:** Express, MongoDB, Socket.io  
+- **Auth:** JWT, Cookies  
+- **Design:** Modular, reusable components with product-grade polish  
 
-📦 Global state management – Powered by Zustand
-
-🎨 Modern UI/UX – Responsive, branded design with smooth animations
-
-🧼 Clean Git hygiene – Easy to set up and extend
-
-🛠️ Tech Stack
-
-Frontend: React, Zustand, Tailwind CSS
-
-Backend: Express, MongoDB, Socket.io
-
-Auth: JWT, Cookies
-
-Design: Modular, reusable components with product-grade polish
-
-📁 Project Structure
+## 📁 Project Structure
 CHAT-APP/
 │── backend/      # Express + Socket.io server
 │── frontend/     # React + Zustand client
 │── .gitignore
 │── package.json
 
-🧪 How to Run Locally
+## 🧪 How to Run Locally
 
 Clone the repo
 
