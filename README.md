@@ -1,7 +1,9 @@
 # 💬 CHAT-APP
 
 A real-time **MERN stack chat application** built with **Socket.io, Zustand, and a modern branded UI**.  
-Developed by **V.S. NAVVIN** as a full-stack portfolio project for placements and product thinking. 
+Developed by **V.S. NAVVIN** as a full-stack portfolio project for placements and product thinking.
+
+---
 
 ## 🚀 Features
 
@@ -10,58 +12,72 @@ Developed by **V.S. NAVVIN** as a full-stack portfolio project for placements an
 - 🟢 **Online status tracking** – Live presence updates  
 - 📦 **Global state management** – Powered by Zustand  
 - 🎨 **Modern UI/UX** – Responsive, branded design with smooth animations  
-- 🧼 **Clean Git hygiene** – Easy to set up and extend 
+- 🧼 **Clean Git hygiene** – Easy to set up and extend
+
+---
 
 ## 🛠️ Tech Stack
 
- **Frontend:** React, Zustand, Tailwind CSS  
+- **Frontend:** React, Zustand, Tailwind CSS  
 - **Backend:** Express, MongoDB, Socket.io  
 - **Auth:** JWT, Cookies  
-- **Design:** Modular, reusable components with product-grade polish  
+- **Design:** Modular, reusable components with product-grade polish
+
+---
 
 ## 📁 Project Structure
+
+```text
 CHAT-APP/
 │── backend/      # Express + Socket.io server
 │── frontend/     # React + Zustand client
 │── .gitignore
 │── package.json
+```
+
+---
 
 ## 🧪 How to Run Locally
 
-Clone the repo
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/YGS-MAVEN/CHAT-APP.git
+   ```
 
-git clone https://github.com/YGS-MAVEN/CHAT-APP.git
+2. **Install dependencies**
+   ```bash
+   cd backend && npm install
+   cd ../frontend && npm install
+   ```
 
+3. **Start servers**
+   ```bash
+   cd backend && npm run dev
+   cd ../frontend && npm run dev
+   ```
 
-Install dependencies
+4. **Open the app**  
+   Visit 👉 [http://localhost:5173](http://localhost:5173)
 
-cd backend && npm install  
-cd ../frontend && npm install
+---
 
+## 📌 Status
 
-Start servers
+- ✅ **Completed** as a placement-prep project  
+- 🧠 **Built** for real-world learning and product thinking  
+- 📚 **Will be revisited** for revisions and upgrades
 
-cd backend && npm run dev  
-cd ../frontend && npm run dev
+---
 
+## 👤 Author
 
-Open the app
-Visit 👉 http://localhost:5173
+- **Name:** V.S. NAVVIN  
+- **Role:** Product-focused full-stack developer  
+- **Specialization:** **MERN, real-time apps, and cloud-native design**
 
-📌 Status
+---
 
-✅ Completed as a placement-prep project
+## 📄 License
 
-🧠 Built for real-world learning and product thinking
+This project is open-source under the **MIT License**.
 
-📚 Will be revisited for revisions and upgrades
-
-👤 Author
-
-V.S. NAVVIN
-Product-focused full-stack developer
-Specialized in MERN, real-time apps, and cloud-native design
-
-📄 License
-
-This project is open-source under the MIT License.
