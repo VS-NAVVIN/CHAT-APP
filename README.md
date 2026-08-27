@@ -41,7 +41,7 @@ CHAT-APP/
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/VS-NAVVIN/CHAT-APP
+   git clone https://github.com/VS-NAVVIN/CHAT-APP.git
    ```
 
 2. **Install dependencies**
